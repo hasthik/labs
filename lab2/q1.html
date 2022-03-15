@@ -1,0 +1,77 @@
+<!Doctype HTML>
+<html>
+<head>
+  <title>Student Bio Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container text-white bg-primary">
+        <h3>Student Bio-Data</h3>
+        <form class="needs-validation">
+              <div class="form-group">
+                <label for="inputName1">Enter your Name:</label>
+                <input type="name" class="form-control" id="inputName1" placeholder="Enter your Name">
+              </div>
+              <div class="form-group">
+                <label for="inputRegNo1">Enter your Registration Number: </label>
+                <input type="number" class="form-control" id="inputRegNo1" placeholder="Enter Registration No">
+              </div>
+              <div>
+                <div>Gender
+                </div>
+              <input type="radio" name="radios" id="radio1" />
+              <label for="radio1">Male</label>
+              <input type="radio" name="radios" id="radio2" />
+              <label for="radio3">Female</label>
+              </div>
+              <div>Select atleast 2 Courses:
+              </div>
+              <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="course">
+                  <label class="form-check-label" for="course">Math</label>
+                  <br>
+                  <input type="checkbox" class="form-check-input" id="course">
+                  <label class="form-check-label" for="course">Physics</label>
+                  <br>
+                  <input type="checkbox" class="form-check-input" id="course">
+                  <label class="form-check-label" for="course">Chemistry</label>
+              </div>
+              <br>
+              <div class="table-responsive ">
+                <table class="table table-light table-hover table-striped">
+                  <tbody>
+                    <tr>
+                      <td>Sl No.</td>
+                      <td>Subject</td>
+                      <td>Hours</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Math</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Physics</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Chemistry</td>
+                        <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="confirmDetails">
+                <label class="form-check-label" for="confirmDetails">Please tick the check box to Confirm your Details</label>
+              </div>
+             <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+        <br>
+        <br>
+    </div>
+</body>
