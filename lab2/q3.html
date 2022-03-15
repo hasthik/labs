@@ -4,44 +4,51 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row top m-5 bg-primary">
-            <h2> Please Enter your Credentials : </h2>
+        <div class="row top bg-primary text-white">
             <form>
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input id="text" type="text" class="form-control" name="User"
-                        placeholder="Please Enter your Username">
+                <h2> Please Enter your Credentials : </h2>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
                 </div>
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                    <input id="password" type="password" class="form-control" name="password"
-                        placeholder="Please Enter your Password">
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
                 </div>
+
                 <div class="input-group">
-                    <span class="input-group-addon">Text</span>
-                    <input id="msg" type="text" class="form-control" name="msg"
-                        placeholder="Please Enter your Additional Info">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">With textarea</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
                 </div>
             </form>
 
         </div>
         <div class='row bottom bg-info'>
-            <div class="col-sm-4 bg-light">
+            <div class="col-sm-4 bg-light h-100">
                 Button Groups
-                <div class="btn-group-vertical">
+                <div class="btn-group-vertical pt-4">
                     <button type="button" class="btn btn-primary">Rajvardhan</button>
                     <button type="button" class="btn btn-primary">Reddy</button>
                     <button type="button" class="btn btn-primary">Nandyala</button>
                 </div>
             </div>
-            <div class="col-sm-4 bg-danger  h-100">
+            <div class="col-sm-4 bg-danger pt-4 h-100">
                 <button type="button" class="btn btn-default">Default</button>
                 <button type="button" class="btn btn-primary">Primary</button>
                 <button type="button" class="btn btn-success">Success</button>
@@ -50,24 +57,13 @@
                 <button type="button" class="btn btn-danger">Danger</button>
                 <button type="button" class="btn btn-link">Link</button>
             </div>
-            <div class="col-sm-4">
-                <table class="table table-condensed">
-                    <thead>
-                        <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Raj</td>
-                            <td>Nandyala</td>
-                            <td>nan999@example.com</td>
-                        </tr>
-
-                    </tbody>
-                </table>
+            <div class="col-sm-4 h-100">
+                <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+                <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+                <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+                <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+                <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+                <h6>Example heading <span class="badge badge-secondary">New</span></h6>
             </div>
         </div>
     </div>
