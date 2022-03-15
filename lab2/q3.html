@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Lab 2</title>
+</head>
+
+<body>
+    <div class="container bg-dark text-white">
+        <h3>Employee Entries : </h3>
+        <table class="table table-bordered table-hover table-light table-striped">
+            <thead class="table-secondary">
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Employee salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Employee 1</td>
+                    <th>7000</th>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Employee 2</td>
+                    <th>4000</th>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Employee 3</td>
+                    <th>9000</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <legend>Create New Employee : </legend>
+            <div class="form-group">
+                <label for="name">Employee Id</label>
+                <input type="number" class="form-control" id="name" placeholder="Enter employee id" />
+            </div>
+            <div class="form-group">
+                <label for="name">Employee Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter employee name" />
+            </div>
+            <div class="form-group">
+                <label for="name">Employee Salary</label>
+                <input type="number" class="form-control" id="name" placeholder="Enter employee salary" />
+            </div>
+            <button type="submit" class="btn btn-success">CREATE</button>
+        </form>
+        <hr>
+        <form>
+            <legend>Update the Employee : </legend>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Select the Employee to update : </label>
+                <select class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Employee New Id</label>
+                <input type="number" class="form-control" id="name" placeholder="Enter employee id" />
+            </div>
+            <div class="form-group">
+                <label for="name">Employee New Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter employee name" />
+            </div>
+            <div class="form-group">
+                <label for="name">Employee New Salary</label>
+                <input type="number" class="form-control" id="name" placeholder="Enter employee salary" />
+            </div>
+            <button type="submit" class="btn btn-info">UPDATE</button>
+        </form>
+        <hr>
+        <form>
+            <legend>Delete the Employee : </legend>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Select the Employee to delete : </label>
+                <select class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-danger">DELETE</button>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
