@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>tde jQuery Example</title>
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <script type="text/javascript" language="javascript">
+        window.prices = {
+            "HP": {
+                "Laptop": 8000,
+                "Mobile": 4000
+            },
+            "Nokia": {
+                "Laptop": 9000,
+                "Mobile": 3000
+            },
+            "Samsung": {
+                "Laptop": 10000,
+                "Mobile": 2000
+            },
+            "Motorola": {
+                "Laptop": 1500,
+                "Mobile": 25000
+            },
+            "Apple": {
+                "Laptop": 90000,
+                "Mobile": 20000
+            }
+        }
+
+        window.total_bill = 0;
+
+        $(document).ready(function () {
+            $('.produce_bill').click(function () {
+                total_bill = prices[$('#brand').val()][$('input[name="type"]:checked').val()] * $('#qty').val();
+                alert("The Total Bill is :" + total_bill)
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div style="width:100%; display: flex; height: 100%;">
+        <div class="form" style="background-color: lightyellow; width: 100%; height: 100%;">
+            <label for="brand">Choose a Brand</label>
+            <select name="brand" id="brand">
+                <option value="HP">HP</option>
+                <option value="Nokia">Nokia</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Apple">Apple</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="qty">Number of devices</label>
+            <input type="number" name="qty" id="qty" min="1" max="100" value="1">
+            <br>
+            <br>
+            <br>
+            <input type="radio" id="type" name="type" value="Mobile" checked>
+            <label for="type">Mobile</label>
+            <input type="radio" id="type" name="type" value="Laptop">
+            <label for="type">Laptop</label>
+            <br>
+            <br>
+            <br>
+            <button class="produce_bill">Produce bill</button>
+        </div>
+    </div>
+</body>
+
+</html>
